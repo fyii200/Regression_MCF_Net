@@ -20,9 +20,8 @@ np.random.seed(0)
 
 # Setting parameters
 parser = argparse.ArgumentParser(description='EyeQ_dense121')
-parser.add_argument('--model_dir', type=str, default='./MCF_Net/regression_model')
 parser.add_argument('--save_model', type=str, default='DenseNet121_v3_v1')
-parser.add_argument('--save_dir', type=str, default='./MCF_Net/best_regression_model')
+parser.add_argument('--save_dir', type=str, default='./MCF_Net')
 parser.add_argument('--result_name', type=str, default='csv_result')
 parser.add_argument('--label_idx', type=list, default=['Good', 'Usable', 'Reject'])
 parser.add_argument('--crop_size', type=int, default=224)

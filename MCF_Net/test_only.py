@@ -16,7 +16,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 parser = argparse.ArgumentParser(description='EyeQ_dense121')
-parser.add_argument('--model_dir', type=str, default='MCF_Net/best_regression_model')
+parser.add_argument('--model_dir', type=str, default='MCF_Net')
 parser.add_argument('--pre_model', type=str, default='DenseNet121_v3_v1')
 parser.add_argument('--test_images_dir', type=str, default='images')
 parser.add_argument('--result_name', type=str, default='csv_result')
