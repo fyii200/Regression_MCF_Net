@@ -1,8 +1,8 @@
 ## Adapting MCF-Net to Predict Retinal Image Quality on a Continuous Scale
-MCF-Net (short for Multiple Color-space Fusion Network) is a DL model used for predicting retinal image quality on a 3-level categorical scale, i.e. 'Good', 'Usable' and 'Reject', as detailed by [Fu et al. (2019)](https://github.com/HzFu/EyeQ). I have previously [re-implemented](https://github.com/fyii200/MCF_Net) the original model (made some changes to the code) so it can readily work with any datasets.  
+MCF-Net (short for Multiple Color-space Fusion Network) is a DL model used to predict retinal image quality on a 3-level categorical scale, i.e. 'Good', 'Usable' and 'Reject', as detailed by [Fu et al. (2019)](https://github.com/HzFu/EyeQ). I have previously [re-implemented](https://github.com/fyii200/MCF_Net) the original model (made some changes to the code) so it can readily work with any datasets.  
 
 ### Motivation
-The motivation behind turning the original MCF-Net (classification model) into a (regression) model arises from a project that aimed to see if image quality filter threshold could be (and should be) treated as a tunable hyperparameter. Briefly, we hypothesised that there existed a Goldilocks level of image quality (on continuous scale) which would give rise to optimal model performance when applied to a given downstream task (see [paper](https://link.springer.com/chapter/10.1007/978-3-031-16525-2_8)).  
+The motivation behind turning the original MCF-Net (classification model) into a regression model arises from a project that aimed to see if image quality filter threshold could be (and should be) treated as a tunable hyperparameter. Briefly, we hypothesised that there existed a Goldilocks level of image quality (on continuous scale) which would give rise to optimal model performance when applied to a given downstream task (see [paper](https://link.springer.com/chapter/10.1007/978-3-031-16525-2_8)).  
 
 ## Re-implementation Steps
 1. Download the trained model via this [link](https://uoe-my.sharepoint.com/:u:/g/personal/s2221899_ed_ac_uk/ESXnLxi8qzpJj4isMrTuzDMByQeB6FN4o6VFqqIZ-yHAJw?e=pkGwWN).
