@@ -3,9 +3,6 @@ MCF-Net (short for Multiple Color-space Fusion Network) is a DL model used to pr
 
 PS: Regression MCF-Net is detailed in this [publication](https://link.springer.com/chapter/10.1007/978-3-031-16525-2_8).
 
-### Motivation
-The motivation behind turning the original MCF-Net (classification model) into a regression model arises from a project that aimed to see if image quality filter threshold could be (and should be) treated as a tunable hyperparameter. Briefly, we hypothesised that there existed a Goldilocks level of image quality (on continuous scale) which would give rise to optimal model performance when applied to a given downstream task (see [paper](https://link.springer.com/chapter/10.1007/978-3-031-16525-2_8)).  
-
 ### Re-implementation Steps
 1. Download the trained model via this [link](https://uoe-my.sharepoint.com/:u:/g/personal/s2221899_ed_ac_uk/ESXnLxi8qzpJj4isMrTuzDMByQeB6FN4o6VFqqIZ-yHAJw?e=pkGwWN).
 2. Keep the model in 'Regression_MCF_Net/MCF_Net'.
