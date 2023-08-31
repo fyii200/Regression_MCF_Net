@@ -6,7 +6,7 @@ PS: Regression MCF-Net is detailed in this [publication](https://link.springer.c
 ### Re-implementation Steps
 1. Download the trained model via this [link](https://uoe-my.sharepoint.com/:u:/g/personal/s2221899_ed_ac_uk/ESXnLxi8qzpJj4isMrTuzDMByQeB6FN4o6VFqqIZ-yHAJw?e=pkGwWN).
 2. Save the model to 'Regression_MCF_Net/MCF_Net'.
-3. Retinal images are assumed to be found in 'Regression_MCF_Net/images'.
+3. Retinal images are expected to be fed from 'Regression_MCF_Net/images'.
 4. Run 'Regression_MCF_Net/MCF_Net/test_only.py' from terminal: python MCF_Net/test_only.py --result_name {name of result folder}
 5. Result file will be saved to the home directory ('Regression_MCF_Net').
 
