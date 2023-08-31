@@ -11,11 +11,11 @@ PS: Regression MCF-Net is detailed in this [publication](https://link.springer.c
 5. Result file will be saved to the home directory ('Regression_MCF_Net').
 
 ### Description of Adaptations
-The original MCF-Net has 5 cross-entropy loss functions, i.e. 3 from the base networks (each deals with a particular colour space), 1 from the feature-level classification layer and 1 from the prediction-level classification layer (final prediction is made here). We removed the softmax function associated with each of these 5 loss functions and used mean absolute error (MAE) in place of cross entropy as the loss function. The altered model was then retrained. 
+The original MCF-Net has 5 cross-entropy loss functions, i.e. 3 from the base networks (each deals with a particular colour space), 1 from the feature-level classification layer and 1 from the prediction-level classification layer (final prediction is made here). We removed the softmax function associated with each of these 5 loss functions and used mean absolute error (MAE) in place of cross entropy as the loss function.
 
-The final output is normalised between 0 (best) and 1 (worst). One important caveat is that the normalisation uses the minimum and maximum quality scores in a given dataset so the quality score really only represents the relative rank of each image in the dataset. As a simple but extreme example, in a dataset with only 2 images with very similar quality (but still slightly different), their normalised scores would be very different indeed (0 and 1, since each one of them has to be either minimum or maximum).
+The final output is normalised between 0 (best) and 1 (worst). It is important to note that the normalisation uses the minimum and maximum quality scores specific to the given test dataset so the quality score really only represents the relative rank of each image in that dataset. 
 
-The adapted model was trained for 30 epochs (batch size = 4) using stohcastic gradient descent on the Eye-Quality training (n=12,543) dataset (original labels coded with 0, 0.5 and 1). Model from the training epoch that yielded the lowest MAE (28 in our case) on the validation set (n=4,875) was saved as the best model. The best model achieved an MAE of 0.15 on the test set (n=12,015).
+The (adapted) model was retrained for 30 epochs (batch size = 4) using stohcastic gradient descent on the Eye-Quality training (n=12,543) dataset (original labels coded with 0, 0.5 and 1). Model from the training epoch that yielded the lowest MAE (28 in our case) on the validation set (n=4,875) was saved as the best model. The best model achieved an MAE of 0.15 on the test set (n=12,015).
 
 ## If you use any part of this work, please cite
 ```
