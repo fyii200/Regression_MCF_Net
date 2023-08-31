@@ -1,5 +1,5 @@
 ## Adapting MCF-Net to Predict Retinal Image Quality on a Continuous Scale
-MCF-Net (short for Multiple Color-space Fusion Network) is a DL model used to predict retinal image quality on a 3-level categorical scale, i.e. 'Good', 'Usable' and 'Reject', as detailed in [Fu et al. (2019)](https://github.com/HzFu/EyeQ). I have previously [re-implemented](https://github.com/fyii200/MCF_Net) the original model (made some changes to the code) so it can readily work with any datasets. 
+MCF-Net (short for Multiple Color-space Fusion Network) is a DL model used to predict retinal image quality on a 3-level categorical scale, i.e. 'Good', 'Usable' and 'Reject', as detailed in [Fu et al. (2019)](https://github.com/HzFu/EyeQ). I have previously [re-implemented](https://github.com/fyii200/MCF_Net) the original model so it can readily work with any datasets. 
 
 PS: Regression MCF-Net is detailed in this [publication](https://link.springer.com/chapter/10.1007/978-3-031-16525-2_8).
 
